@@ -1,2 +1,2 @@
 # cryptage
-algorithme de cryptage par décalage
+algorithmes de cryptage par décalage et par substitution
