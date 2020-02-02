@@ -18,7 +18,7 @@ class cryptage{
 public:
 cryptage(int n):decalage(n){}
 char operator() (char c) {
-if (isupper(c))
+if (isupper(c) && isalpha(c) )
 return(c+decalage);
 return c;
 }
@@ -30,7 +30,7 @@ int decalage ;
 };
 
 int main(){
-string s="ABDtrrttrtr";
+string s="A+Dtrrttrtr";
 int dec=decalage();
 cryptage crypte(dec);
 transform(s.begin(),s.end(),s.begin(),crypte);
